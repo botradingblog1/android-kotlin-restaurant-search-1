@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Restaurant Search 1</string>
+    <string name="action_settings">Settings</string>
+    <string name="restaurant_search_label">Restaurant Search</string>
+    <string name="search_label">Search</string>
+
+</resources>
