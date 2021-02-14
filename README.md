@@ -19,7 +19,7 @@ For a step-by-step tutorial, please see my [blog post on developing a Restaurant
 1. Cone the project from GitHub
 
 ```
-	https://github.com/justmobiledev/android-kotlin-camera-picture-1.git
+	https://github.com/justmobiledev/android-kotlin-restaurant-search-1.git
 ```
 2. Build the project in Android Studio
 3. Deploy on simulator or device.
