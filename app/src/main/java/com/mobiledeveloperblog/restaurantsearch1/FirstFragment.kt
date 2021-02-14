@@ -40,12 +40,11 @@ import com.mobiledeveloperblog.restaurantsearch1.location.GeoLocationManager
 class FirstFragment : Fragment(), OnMapReadyCallback, MaterialSearchBar.OnSearchActionListener, SuggestionsAdapter.OnItemViewClickListener {
     private val TAG = "FirstFragment"
     private lateinit var searchBar: MaterialSearchBar
-    private lateinit var searchEditText: EditText
+    private lateinit var map: GoogleMap
+    private lateinit var mapView: MapView
     private lateinit var locationManager: GeoLocationManager
     private lateinit var placesClient: PlacesClient
     private lateinit var predictionsList: List<AutocompletePrediction>
-    private lateinit var map: GoogleMap
-    private lateinit var mapView: MapView
     private lateinit var  zoomControls:  ZoomControls
     private val autoCompleteSessionToken = AutocompleteSessionToken.newInstance()
     private val MAP_ZOOM = 18F
@@ -166,13 +165,6 @@ class FirstFragment : Fragment(), OnMapReadyCallback, MaterialSearchBar.OnSearch
         mapView.onCreate(savedInstanceState)
         mapView.onResume()
         mapView.getMapAsync(this)
-
-        //zoomControls = view?.findViewById(R.id.zoomControls)
-        /*  zoomControls.setOnClickListener {
-            if (view.)
-
-        }
-        zoomControls.setOnZoomOutClickListener { map.zoomOut() }*/
 
         val permissionGranted = requestLocationPermission();
         if (permissionGranted) {
